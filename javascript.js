@@ -32,7 +32,7 @@ function showRightContent() {
   let scrollTop = document.documentElement.scrollTop;
   for (let i = 0; i < animateRightContent.length; i++) {
     let high = animateRightContent[i].offsetTop;
-    if (high - 200 < scrollTop) {
+    if (high - 150 < scrollTop) {
       animateRightContent[i].style.opacity = 1;
       animateRightContent[i].classList.add("animate__fadeInRight");
     }

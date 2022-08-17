@@ -49,10 +49,11 @@
   width: 100%;
   /* background-color: rgb(207, 170, 216); */
   /* background-image: url("https://giffiles.alphacoders.com/214/214112.gif"); */
+  background-image: url("./assets/img/luces.png");
   background-attachment: fixed;
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: end;
   position: relative;
   z-index: 5;
 }
@@ -111,19 +112,13 @@
   width: 300px;
   height: 300px;
 }
-/* .color-green {
-  background-color: rgb(200, 200, 200);
-} */
+
 .info {
   height: 40vh;
   margin: 0;
   padding: 3;
-  /* background-image: url("./assets/img/marco.png"); */
-  /* background-color: rgba(111, 202, 195, 0.877); */
   background-color: rgba(111, 202, 194, 0);
   background-size: cover;
-  /* background-size: 80vmin; */
-
   background-repeat: no-repeat;
   background-position: center;
 }
