@@ -65,9 +65,6 @@
 }
 .home3 {
   height: 60vh;
-  /* background-color: rgba(216, 108, 164, 0.986); */
-
-  /* background-color: rgba(0, 0, 0, 0.77); */
   align-items: center;
   display: flex;
   justify-content: center;
@@ -85,8 +82,8 @@
 }
 
 .home-mirabel {
-  width: 320px;
-  height: 470px;
+  width: 220px;
+  height: 370px;
 }
 .nombre {
   width: 90%;
@@ -109,8 +106,8 @@
   text-align: center;
 }
 .img-cinco {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .info {
@@ -220,7 +217,7 @@
 }
 .casa {
   height: 300px;
-  width: 300px;
+  width: 250px;
 }
 .home4 {
   height: 100%;
@@ -338,10 +335,7 @@ footer a {
   text-decoration: none;
   padding-top: 6rem;
 }
-/* .btn-open img {
-  height: 0%;
-  width: 30%;
-} */
+
 .hide {
   display: none;
 }
@@ -354,8 +348,8 @@ footer a {
   background-color: rgb(173, 108, 151);
 }
 .gif {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 100px;
 }
 .end {
   height: 100vh;
@@ -366,6 +360,30 @@ footer a {
   background-position: center;
   position: relative;
   z-index: 4;
+}
+.display-4 {
+  font-size: 2rem !important;
+}
+@media (min-width: 320px) {
+  .gif {
+    width: 300px;
+    height: 200px;
+  }
+  .home-mirabel {
+    width: 320px;
+    height: 470px;
+  }
+  .img-cinco {
+    width: 300px;
+    height: 300px;
+  }
+  .casa {
+    height: 300px;
+    width: 300px;
+  }
+  .display-4 {
+    font-size: 3.5rem !important;
+  }
 }
 @media (min-width: 470px) {
   .nombre {
