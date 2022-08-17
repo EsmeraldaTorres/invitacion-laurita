@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madrigal", serif;
+}
+.font-gothic {
+  font-family: "Gothic A1", sans-serif;
+}
+.font-paris {
+  font-family: "Parisienne", cursive;
+}
+.font-cormo {
+  font-family: "Cormorant SC", serif;
+}
+.font-sawa {
+  font-family: "Sawarabi Mincho", serif;
+}
+.font-walter {
+  font-family: "Walter Turncoat", cursive;
+}
+.display-1 {
+  font-size: 3.5rem !important;
+}
+.bg-purple {
+  background-color: rgb(207, 170, 216);
+}
+.fondo {
+  height: min-content;
+  width: 100%;
+  /* background-color: rgb(207, 170, 216); */
+  background-image: linear-gradient(rgba(5, 7, 12, 0.24), rgba(5, 7, 12, 0.24)),
+    url("./assets/img/fondo.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 3;
+}
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2s;
+}
+.space {
+  height: 5vh;
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgb(207, 170, 216); */
+  background-image: url("https://giffiles.alphacoders.com/214/214112.gif");
+  /* background-attachment: fixed; */
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 5;
+}
+.luces {
+  position: absolute;
+}
+.home2 {
+  height: 100%;
+}
+.home3 {
+  height: 60vh;
+  /* background-color: rgba(216, 108, 164, 0.986); */
+
+  /* background-color: rgba(0, 0, 0, 0.77); */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-home {
+  background-color: rgb(173, 108, 151);
+  z-index: 5;
+  position: static;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  padding-left: 1rem;
+}
+
+.home-mirabel {
+  width: 320px;
+  height: 470px;
+}
+.nombre {
+  width: 90%;
+}
+.luces {
+  max-width: 100%;
+}
+
+.cumpleanios {
+  height: 40%;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.575);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display-6 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.img-cinco {
+  width: 300px;
+  height: 300px;
+}
+/* .color-green {
+  background-color: rgb(200, 200, 200);
+} */
+.info {
+  height: 40vh;
+  margin: 0;
+  padding: 3;
+  /* background-image: url("./assets/img/marco.png"); */
+  /* background-color: rgba(111, 202, 195, 0.877); */
+  background-color: rgba(111, 202, 194, 0);
+  background-size: cover;
+  /* background-size: 80vmin; */
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.isabela {
+  height: 50%;
+  max-width: max-content;
+}
+.font-disney {
+  font-family: "waltographUI", arial !important;
+}
+.btn {
+  background-color: rgba(105, 228, 228, 0.863);
+  color: rgb(8, 7, 7);
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+.btn a:hover {
+  color: rgb(43, 70, 226);
+  text-decoration: none;
+}
+
+.shadow {
+  background-color: rgba(155, 132, 132, 0.103);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  border-radius: 5%;
+}
+.window-back {
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.bg-green {
+  justify-content: center;
+  align-items: center;
+}
+.display-2 {
+  font-size: 3rem !important;
+}
+/* Te invito a celebrar mi cumpleaños */
+.animate-left {
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.animate-right {
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.animate-card {
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+.appear-left {
+  animation: appear-left 1s;
+}
+@keyframes appear-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-image {
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+.appear-image {
+  animation: appear-image 0.9s;
+}
+@keyframes appear-image {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Fecha */
+.text-purple {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgb(165, 127, 165);
+}
+.home-isabela {
+  width: 250px;
+  height: 350px;
+}
+.casa {
+  height: 300px;
+  width: 300px;
+}
+.home4 {
+  height: 100%;
+  display: flex;
+  margin-top: 6rem;
+}
+.w-90 {
+  width: 90%;
+}
+.ubicacion {
+  height: min-content;
+  padding-bottom: 3rem;
+}
+.bg-green {
+  background-color: rgb(73, 179, 181);
+  padding: 2rem;
+}
+.text-green {
+  color: rgb(238, 224, 233);
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px,
+    rgba(0, 0, 0, 0.5) 0px 12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px,
+    rgba(0, 0, 0, 0.5) 0px 12px 13px, rgba(0, 0, 0, 0.5) 0px -3px 5px;
+}
+.animate-right-content {
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.bg-color-white {
+  background-color: rgba(249, 243, 235, 0.462);
+}
+/* audio */
+.player-audio {
+  display: none;
+}
+.player-icon {
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 100%;
+}
+.player-btn {
+  bottom: 2rem;
+  right: 2rem;
+  position: fixed;
+  justify-content: end;
+  align-items: flex-end;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+  z-index: 1;
+}
+.hide {
+  display: none;
+}
+.player-btn:hover {
+  cursor: pointer;
+}
+
+/* SOBRE */
+.sobre {
+  height: 100vh;
+  width: 80vw;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-white-almond {
+  background-color: rgb(173, 108, 151);
+}
+.tira-flores {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.animate__animated .animate__pulse {
+  --animate-duration: 1s;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(192, 192, 238);
+}
+.z-index-3 {
+  position: absolute;
+  bottom: 50vh;
+  height: 40vh;
+  top: 20vh;
+  z-index: 3;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+.z-index-2 {
+  position: absolute;
+  bottom: 20vh;
+  height: 50vh;
+  z-index: 2;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.btn-open {
+  position: absolute;
+  z-index: 4;
+  background-color: rgba(240, 255, 255, 0);
+  border: none;
+  text-decoration: none;
+  padding-top: 6rem;
+}
+/* .btn-open img {
+  height: 0%;
+  width: 30%;
+} */
+.hide {
+  display: none;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.bg-pink {
+  background-color: rgb(173, 108, 151);
+}
+.gif {
+  width: 300px;
+  height: 200px;
+}
+.end {
+  height: 100vh;
+  width: 100%;
+  /* background-image: linear-gradient(rgba(5, 7, 12, 0.24), rgba(5, 7, 12, 0.24)),
+    url("./assets/img/familia.png"); */
+  /* background-attachment: fixed;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 3; */
+  background-attachment: fixed;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 4;
+}
+@media (min-width: 470px) {
+  .nombre {
+    width: 80%;
+  }
+  .home-mirabel {
+    width: 470px;
+    height: 620px;
+  }
+  .home3 {
+    height: 40vh;
+  }
+  .display-1 {
+    font-size: 5rem !important;
+  }
+  .home-isabela {
+    width: 400px;
+    height: 500px;
+  }
+  .casa {
+    height: 400px;
+    width: 400px;
+  }
+  .gif {
+    width: 450px;
+    height: 350px;
+  }
+}
+@media (min-width: 760px) {
+  .nombre {
+    width: 70%;
+  }
+  .home3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .bg-green {
+    display: flex;
+  }
+  .home-mirabel {
+    width: 570px;
+    height: 720px;
+  }
+  .home-isabela {
+    width: 500px;
+    height: 600px;
+  }
+  .display-2 {
+    font-size: 3.5rem !important;
+  }
+  .gif {
+    width: 550px;
+    height: 450px;
+  }
+}
+@media (min-width: 1020px) {
+  .nombre {
+    width: 40%;
+  }
+  .home3 {
+    height: 40vh;
+  }
+  .window-back {
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+  }
+  .display-2 {
+    font-size: 4rem !important;
+  }
+}
