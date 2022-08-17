@@ -48,8 +48,8 @@
   height: 100vh;
   width: 100%;
   /* background-color: rgb(207, 170, 216); */
-  background-image: url("https://giffiles.alphacoders.com/214/214112.gif");
-  /* background-attachment: fixed; */
+  /* background-image: url("https://giffiles.alphacoders.com/214/214112.gif"); */
+  background-attachment: fixed;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -365,14 +365,6 @@ footer a {
 .end {
   height: 100vh;
   width: 100%;
-  /* background-image: linear-gradient(rgba(5, 7, 12, 0.24), rgba(5, 7, 12, 0.24)),
-    url("./assets/img/familia.png"); */
-  /* background-attachment: fixed;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  z-index: 3; */
   background-attachment: fixed;
   background-size: auto;
   background-repeat: no-repeat;
@@ -437,7 +429,7 @@ footer a {
 }
 @media (min-width: 1020px) {
   .nombre {
-    width: 40%;
+    width: 60%;
   }
   .home3 {
     height: 40vh;
