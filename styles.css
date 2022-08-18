@@ -2,8 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Madrigal", serif;
+  font-family: "madrigal", "Mulish", cursive;
 }
+@font-face {
+  font-family: madrigal;
+  src: url(./text/Madrigal.ttf);
+}
+.txt-blue {
+  color: rgb(56, 155, 132);
+  text-shadow: 2px 0 2px rgb(247, 236, 236);
+}
+.txt-yellow {
+  color: rgba(235, 203, 60, 0.938);
+  text-shadow: 3px 1px 1px rgba(20, 17, 17, 0.747);
+}
+.txt-orange {
+  color: rgb(235, 112, 170);
+  text-shadow: 3px 3px 3px rgb(24, 24, 24);
+}
+.txt-purple {
+  color: rgb(200, 112, 235);
+  text-shadow: 3px 3px 3px rgb(24, 24, 24);
+}
+.txt-marine {
+  color: rgb(56, 155, 132);
+  text-shadow: 3px 3px 3px rgb(14, 11, 11);
+}
+
+/* -------------- */
 .font-gothic {
   font-family: "Gothic A1", sans-serif;
 }
@@ -23,12 +49,11 @@
   font-size: 3.5rem !important;
 }
 .bg-purple {
-  background-color: rgb(207, 170, 216);
+  background-color: rgba(224, 121, 169, 0.938);
 }
 .fondo {
   height: min-content;
   width: 100%;
-  /* background-color: rgb(207, 170, 216); */
   background-image: linear-gradient(rgba(5, 7, 12, 0.24), rgba(5, 7, 12, 0.24)),
     url("https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2021/11/26/61a0b7e6ceeb5.r_d.756-419-0.jpeg");
   background-attachment: fixed;
@@ -47,8 +72,6 @@
 .home {
   height: 100vh;
   width: 100%;
-  /* background-color: rgb(207, 170, 216); */
-  /* background-image: url("https://giffiles.alphacoders.com/214/214112.gif"); */
   background-image: url("./assets/img/luces.png");
   background-attachment: fixed;
   background-size: auto;
@@ -70,8 +93,15 @@
   justify-content: center;
   align-items: center;
 }
+.home6 {
+  height: 80vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .bg-home {
-  background-color: rgb(173, 108, 151);
+  background-color: rgba(224, 121, 169, 0.938);
   z-index: 5;
   position: static;
 }
@@ -91,7 +121,9 @@
 .luces {
   max-width: 100%;
 }
-
+.bg-card {
+  background-color: rgb(164, 115, 31) !important;
+}
 .cumpleanios {
   height: 40%;
   width: auto;
@@ -127,8 +159,9 @@
   font-family: "waltographUI", arial !important;
 }
 .btn {
-  background-color: rgba(105, 228, 228, 0.863);
-  color: rgb(8, 7, 7);
+  background-color: rgba(190, 186, 190, 0.863);
+  color: rgb(235, 112, 170);
+  text-shadow: 1px 1px rgb(24, 24, 24);
 }
 .btn a {
   text-decoration: none;
@@ -138,15 +171,23 @@
   color: rgb(43, 70, 226);
   text-decoration: none;
 }
-
 .shadow {
   background-color: rgba(155, 132, 132, 0.103);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
   border-radius: 5%;
 }
 .window-back {
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.section-foto {
   height: 70vh;
   margin: 0;
   padding: 0;
@@ -186,7 +227,6 @@
     transform: translateX(0);
   }
 }
-
 .animate-image {
   opacity: 0;
   transition: all ease 0.8s;
@@ -202,7 +242,6 @@
     transform: translateY(0);
   }
 }
-
 /* Fecha */
 .text-purple {
   color: aliceblue;
@@ -245,7 +284,6 @@
   opacity: 0;
   transition: all ease 0.5s;
 }
-
 .bg-color-white {
   background-color: rgba(249, 243, 235, 0.462);
 }
@@ -255,9 +293,10 @@
 }
 .player-icon {
   font-size: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(49, 48, 48, 0.934) 0px 54px 55px,
+    rgba(245, 229, 229, 0.959) 0px -12px 30px,
+    rgba(221, 218, 218, 0.12) 0px 4px 6px,
+    rgba(255, 252, 252, 0.205) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 100%;
 }
 .player-btn {
@@ -278,7 +317,6 @@
 .player-btn:hover {
   cursor: pointer;
 }
-
 /* SOBRE */
 .sobre {
   height: 100vh;
@@ -289,7 +327,7 @@
   align-items: center;
 }
 .bg-white-almond {
-  background-color: rgb(173, 108, 151);
+  background-color: rgba(224, 121, 169, 0.938);
 }
 .tira-flores {
   height: 5vh;
@@ -326,7 +364,6 @@ footer a {
   vertical-align: middle;
   border-style: none;
 }
-
 .btn-open {
   position: absolute;
   z-index: 4;
@@ -335,17 +372,14 @@ footer a {
   text-decoration: none;
   padding-top: 6rem;
 }
-
 .hide {
   display: none;
 }
-
 .visibility {
   visibility: hidden;
 }
-
 .bg-pink {
-  background-color: rgb(173, 108, 151);
+  background-color: rgba(224, 121, 169, 0.938);
 }
 .gif {
   width: 200px;
@@ -363,6 +397,10 @@ footer a {
 }
 .display-4 {
   font-size: 2rem !important;
+}
+.foto {
+  width: 250px;
+  height: 250px;
 }
 @media (min-width: 320px) {
   .gif {
@@ -384,6 +422,10 @@ footer a {
   .display-4 {
     font-size: 3.5rem !important;
   }
+  .foto {
+    width: 90%;
+    height: 90%;
+  }
 }
 @media (min-width: 470px) {
   .nombre {
@@ -394,7 +436,7 @@ footer a {
     height: 620px;
   }
   .home3 {
-    height: 40vh;
+    height: 60vh;
   }
   .display-1 {
     font-size: 5rem !important;
@@ -410,6 +452,14 @@ footer a {
   .gif {
     width: 450px;
     height: 350px;
+  }
+  .foto {
+    width: 80%;
+    height: 80%;
+  }
+  .foto {
+    width: 70%;
+    height: 70%;
   }
 }
 @media (min-width: 760px) {
@@ -439,6 +489,13 @@ footer a {
     width: 550px;
     height: 450px;
   }
+  .foto {
+    width: 50%;
+    height: 50%;
+  }
+  .home6 {
+    height: 65vh;
+  }
 }
 @media (min-width: 1020px) {
   .nombre {
@@ -454,5 +511,9 @@ footer a {
   }
   .display-2 {
     font-size: 4rem !important;
+  }
+  .foto {
+    width: 35%;
+    height: 35%;
   }
 }

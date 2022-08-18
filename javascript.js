@@ -4,7 +4,7 @@ function showLeft() {
   let scrollTop = document.documentElement.scrollTop;
   for (let i = 0; i < animateLeft.length; i++) {
     let high = animateLeft[i].offsetTop;
-    if (high - 900 < scrollTop) {
+    if (high - 500 < scrollTop) {
       animateLeft[i].style.opacity = 1;
       animateLeft[i].classList.add("animate__fadeInLeftBig");
     }

@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Gothic+A1:wght@200;300;500;600&family=Parisienne&family=Sawarabi+Mincho&family=Walter+Turncoat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+SC:wght@300;400;500;600;700&family=Gothic+A1:wght@200;300;500;600&family=Mulish&family=Parisienne&family=Sawarabi+Mincho&family=Walter+Turncoat&display=swap"
       rel="stylesheet"
     />
     <!-- disney fonts -->
@@ -81,7 +81,7 @@
             alt="nombre"
           />
         </div>
-        <div class="text-white text-center player-btn" id="play">
+        <div class="txt-orange text-center player-btn" id="play">
           <i class="bi bi-pause-circle pause-btn player-icon"></i>
           <i class="bi bi-play-circle play-btn player-icon hide"></i>
           <p>audio</p>
@@ -91,7 +91,7 @@
             id="audio"
             controls
             autoplay
-            src="./assets/audio/encanto.mpeg"
+            src="./assets/audio/encanto.mpe"
           ></audio>
         </div>
       </section>
@@ -106,10 +106,12 @@
           />
         </div>
       </section>
-      <section class="home3 pl-4 pr-4 pb-4">
+      <section class="home6 pl-4 pr-4 pb-4">
         <div class="row animate__animated animate-right">
           <div class="col-12 d-flex justify-content-center align-items-center">
-            <p class="display-1 text-white text-center">¡Vamos a celebrar!</p>
+            <p class="display-1 txt-blue text-center">
+              Una princesita está por cumplir
+            </p>
           </div>
         </div>
       </section>
@@ -120,7 +122,7 @@
           <div class="d-flex justify-content-center">
             <div class="">
               <div>
-                <p class="display-1 text-center text-white pt-4">MIS</p>
+                <!-- <p class="display-1 text-center text-white pt-4">MIS</p> -->
 
                 <div class="d-flex justify-content-center align-items-center">
                   <img
@@ -129,17 +131,46 @@
                     alt="cinco"
                   />
                 </div>
-                <p class="display-1 text-center text-white pt-4">AÑOS</p>
+                <p class="display-1 text-center txt-yellow pt-4">AÑOS</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="space"></div>
+      <section class="section-foto">
+        <div
+          class="animate-image info d-flex justify-content-center align-items-center"
+        >
+          <div class="d-flex justify-content-center">
+            <div class="">
+              <div>
+                <!-- <p class="display-1 text-center text-white pt-4">MIS</p> -->
+
+                <div class="d-flex justify-content-center align-items-start">
+                  <img
+                    class="foto"
+                    src="./assets/img/fotolauritabb.png"
+                    alt="cinco"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home3 pl-4 pr-4 pb-4">
+        <div class="row animate__animated animate-right">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <p class="display-1 txt-blue text-center">¡Vamos a celebrarlo!</p>
+          </div>
+        </div>
+      </section>
       <section class="home4 pt-4">
         <div class="w-100">
-          <p class="text-purple display-4">Este sábado 10 de septiembre</p>
-          <p class="text-center text-white display-3">2:00pm</p>
+          <p class="txt-blue text-center display-4">
+            Este sábado 10 de septiembre
+          </p>
+          <p class="text-center txt-orange display-3">2:00pm</p>
           <div class="d-flex justify-content-center">
             <img
               class="home-isabela"
@@ -153,7 +184,7 @@
       <div class="space"></div>
       <section class="w-100 color-green pt-4 animate__animated animate-left">
         <div class="d-flex align-items-center">
-          <p class="text-center pt-2 display-4 w-100 bg-green">
+          <p class="text-center pt-2 display-4 w-100 txt-blue">
             <i class="bi bi-geo-alt"></i>En mi casa
           </p>
         </div>
@@ -162,16 +193,20 @@
       <div class="space"></div>
       <section class="ubicacion w-100 pt-4">
         <div class="d-flex justify-content-around align-items-center">
-          <!-- <div class="row w-90">
-            <div
-              class="col-md-6 d-flex justify-content-center shadow animate__animated animate-card align-items-center"
-            > -->
-          <div class="pt-4">
-            <p class="display-6 font-disney text-green">
-              Invitación para 3 personas
-            </p>
+          <div class="pt-4 pb-4 shadow">
+            <div class="d-flex justify-content-center">
+              <div class="w-50">
+                <img
+                  class="tira-flores pr-2"
+                  src="./assets/img/flor4 (1).png"
+                  alt=""
+                />
+                <p class="lead font-sawa text-white p-4 text-center">
+                  Por favor, confirma tu asistencia antes del 1 de septiembre
+                </p>
+              </div>
+            </div>
             <div class="d-flex justify-content-center align-items-center">
-              <!-- <button class="btn rounded text-center p-2 display-1"> -->
               <a
                 target="_blank"
                 class="btn rounded text-center p-4 display-6 animate__animated animate__pulse animate__infinite"
@@ -180,17 +215,13 @@
                   >Confirmar asistencia</i
                 ></a
               >
-              <!-- </button> -->
             </div>
-            <p class="display-6 font-sawa text-white p-4 text-center">
-              Confirma tu asistencia antes del 1 de septiembre
-            </p>
           </div>
         </div>
         <div class="">
-          <div class="d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center pt-4">
             <img
-              class="casa"
+              class="casa pt-4"
               src="https://imagenesparapeques.com/wp-content/uploads/2022/05/Encanto-Antonio-Madrigal-Persoanjes.png"
               alt="leopardo"
             />
@@ -213,7 +244,7 @@
             />
           </div>
           <p
-            class="display-1 text-center text-green animate__animated animate-"
+            class="display-1 text-center txt-marine animate__animated animate-"
           >
             ¡TE ESPERAMOS!
           </p>
@@ -225,7 +256,7 @@
             />
           </div>
           <p
-            class="display-1 pt-4 text-center text-green animate__animated animate-"
+            class="display-1 pt-4 text-center txt-marine animate__animated animate-"
           >
             NO FALTES
           </p>
