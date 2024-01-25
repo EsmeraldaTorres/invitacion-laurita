@@ -1,89 +1,115 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- styles.css -->
-    <link rel="stylesheet" href="./styles.css" />
     <!-- boostrap -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <!-- animate -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+SC:wght@300;400;500;600;700&family=Gothic+A1:wght@200;300;500;600&family=Mulish&family=Parisienne&family=Sawarabi+Mincho&family=Walter+Turncoat&display=swap"
-      rel="stylesheet"
-    />
-    <!-- disney fonts -->
-    <link
-      href="https://allfont.net/allfont.css?fonts=walt-disney-script"
-      rel="stylesheet"
-      type="text/css"
-    />
     <!-- icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <title>Laurita Cumpleaños</title>
+    <!-- carousel2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+QLD+Beginner:wght@400;500;600&family=Kalam:wght@300;400;700&family=Manrope:wght@200;300;400;500;600&family=Montserrat:wght@400;517;737&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Cutive+Mono&family=Fredoka&family=Great+Vibes&family=Kaushan+Script&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Mitr:wght@200;300;400;500;600&family=Oleo+Script:wght@400;700&family=Satisfy&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Alexander cumple 9 años</title>
   </head>
-  <body>
+  <body class="avoiding-scroll w-100">
+    <!-- Sobre -->
     <div
-      class="bg-white-almond animate__animated d-flex justify-content-center align-items-center"
+      class="bg-dark-black d-flex justify-content-center align-items-center test-class"
+      id="parent-div"
     >
-      <div class="sobre" id="hoja-principal">
-        <img
-          loading="lazy"
-          id="sobre-arriba"
-          src="./assets/img/sobrearriba.png"
-          class="animate__animated p-0 m-0 z-index-3"
-          alt="sobre-arriba"
-        />
-        <img
-          loading="lazy"
-          id="sobre-abajo"
-          class="p-0 m-0 z-index-2 animate__animated"
-          src="./assets/img/sobreabajo.png"
-          alt="sobre-abajo"
-        />
-        <button id="btn-open" class="btn-open" onclick="abrir()">
-          <img
-            loading="lazy"
-            src="./assets/img/flor4.png"
-            class="animate__animated animate__pulse animate__infinite logo"
-            alt="logo"
-          />
-          <p class="p-0">pulsa para abrir</p>
-        </button>
-      </div>
-    </div>
-    <div id="fondo" class="fondo hide">
-      <section class="home d-flex justify-content-center align-items-center">
+      <div id="hoja-principal" class="sobre">
         <div
-          id="nombre"
-          class="d-flex align-items-center justify-content-center animate__animated animate__slower"
+          id="bg-black-first"
+          class="d-flex flex-column w-100 h-100 bg-black"
         >
           <img
-            id="nombre-img "
-            class="nombre"
-            src="./assets/img/LAURITA.png"
-            alt="nombre"
+            src="./assets/img/FIVE.png"
+            alt=""
+            id="sobre-arriba"
+            class="animate__animated pt-5rem m-0 z-index-3 w-80 inicio"
           />
+          <button
+            id="btn-open"
+            class="btn-open p-0 m-0 z-index-2 animate__animated"
+            onclick="abrir()"
+          >
+            <img
+              id="logo"
+              loading="lazy"
+              src="./assets/img/NEW.png"
+              class="animate__animated animate__pulse animate__infinite"
+              alt="logo"
+            />
+          </button>
         </div>
-        <div class="txt-orange text-center player-btn" id="play">
+      </div>
+    </div>
+    <!-- Invitacion -->
+    <div id="invitacion" class="invitacion hide">
+      <section class="home d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center flex-column">
+          <img
+            loading="lazy"
+            class="name animate__animated"
+            src="./assets/img/rename.png"
+            alt="name"
+            id="name"
+          />
+          <p
+            class="text-white text-center animate__animated animate__pulse animate__infinite"
+          >
+            Desliza hacia abajo
+          </p>
+        </div>
+        <div class="text-white text-center player-btn" id="play">
           <i class="bi bi-pause-circle pause-btn player-icon"></i>
-          <i class="bi bi-play-circle play-btn player-icon hide"></i>
+          <i class="bi bi-play-circle play-btn player-icon d-none"></i>
           <p>audio</p>
         </div>
         <div class="player-audio">
@@ -91,212 +117,367 @@
             id="audio"
             controls
             autoplay
-            src="./assets/audio/encanto.mpeg"
+            src="./assets/audio/Nunca-estars-solo-Never-Be-Alone-Shadrow-FNAF.mp3"
           ></audio>
         </div>
       </section>
-      <section class="home2 d-flex justify-content-center align-items-start">
+      <section class="window-back">
+        <div class="window"></div>
         <div
-          class="justify-content-center animate__animated animate__slower animate-left"
+          class="window-15"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          data-aos-offset="200"
         >
+          <div>
+            <div
+              class="d-flex font-cormo justify-content-center pb-4 display-4"
+            >
+              <p>¿Están listos?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="cuando p-4 d-flex justify-content-center align-items-center"
+      >
+        <div class="h-fit-content">
+          <div
+            class="d-flex justify-content-center"
+            data-aos="zoom-in-right"
+            data-aos-duration="2000"
+          >
+            <img
+              class="img-fecha animate-right text-center"
+              src="./assets/img/fffecha.png"
+              alt="fecha"
+            />
+          </div>
+          <!-- <div
+          class="animate-left"
+          data-aos="zoom-in-left"
+          data-aos-duration="2000"
+        >
+          <p class="text-center m-0 pt-4 lead text-white font-cormo">
+            Faltan
+          </p>
+          <p id="demo" class="pl-4 pr-4 font-cormo cuenta-regresiva"></p>
+        </div> -->
+          <div
+            class="animate-left text-center w-100"
+            data-aos="zoom-in-left"
+            data-aos-duration="2000"
+          >
+            <img
+              class="w-50 h-50 m-0 lead"
+              src="./assets/img/FECHA-alex-5.png"
+              alt="fecha"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="main-phrase text-white d-flex justify-content-center">
+        <div class="w-70">
+          <div class="d-flex justify-content-center pb-4rem">
+            <img
+              class="decoration"
+              src="./assets/img-j-ignacio/line-silver.png"
+              alt="decoration"
+            />
+          </div>
           <img
-            class="home-mirabel"
-            src="https://media.baamboozle.com/uploads/images/186881/1654812740_1684028_gif-url.gif"
-            alt="mirabel"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-offset="300"
+            src="./assets/img/vamos.png"
+            alt=""
+            class="w-100"
+          />
+          <!-- <p
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-offset="300"
+            class="display-4 text-center animate-text pb-3"
+          >
+            ¡Vamos a festejar!
+          </p> -->
+          <p
+            class="pl-4 pr-4 pb-4 mb-4 text-center animate-text font-tange display-6"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            Estamos emocionados de invitarlos a la fiesta de cumpleaños de
+            Oliver. ¡Será una celebración llena de diversión!
+          </p>
+          <p
+            class="pl-4 pr-4 pb-4 mb-4 text-center animate-text font-tange display-6"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            Únanse a nosotros para una tarde llena de juegos, deliciosa comida,
+            dulces y alberca.
+          </p>
+          <p
+            class="pl-4 pr-4 pb-4 mb-4 text-center animate-text font-tange display-6"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            ¡Esperamos contar con su presencia para compartir este día tan
+            especial!
+          </p>
+          <div class="d-flex justify-content-center pt-4rem">
+            <img
+              class="decoration"
+              src="./assets/img-j-ignacio/line-silver.png"
+              alt="decoration"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="recepcion-img w-100 animate-left d-flex justify-content-center align-items-center"
+      >
+        <!-- <p
+          class="text-white text-shadow font-paris titles w-80 display-3 text-center"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+        <p class="w-100 text-center m-0 pt-4 lead text-white">Faltan</p>
+        <p id="demo" class="w-100 pl-4 pr-4 font-cormo cuenta-regresiva"></p>        </p> -->
+      </section>
+      <section
+        class="recepcion-information text-white d-flex align-items-center justify-content-center"
+      >
+        <div>
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              data-aos="zoom-in"
+              src="./assets/img/Salón de eventos élite.png"
+              alt=""
+              class="w-80 text-center"
+            />
+          </div>
+
+          <p class="lead text-center mr-4 ml-4">
+            Niños Heroes 426, Morelos, 86370 Comalcalco, Tab.
+          </p>
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              data-aos="zoom-out"
+              data-aos-duration="500"
+              data-aos-offset="200"
+              src="./assets/img/HORA.png"
+              alt=""
+              class="w-50"
+            />
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              data-aos="zoom-out"
+              data-aos-duration="500"
+              data-aos-offset="200"
+              class="img-ubicaciones"
+              src="./assets/img/Captura de pantalla 2024-01-24 a la(s) 18.06.45.png"
+              alt="iglesia"
+            />
+          </div>
+          <!-- <div>
+            <p class="lead text-center mr-4 ml-4 mt-4">
+              Re
+            </p>
+          </div> -->
+          <div class="d-flex align-items-center py-4 justify-content-center">
+            <a
+              class="animate__animated animate__slow animate__flash animate__infinite"
+              href="https://www.google.com/maps/place/Sala+de+Eventos+Las+Palmas/@18.6532917,-91.7966613,15z/data=!4m15!1m8!3m7!1s0x85f107abcde485c1:0x12b0bc7af1c81d22!2sSala+de+Eventos+Las+Palmas!8m2!3d18.6532917!4d-91.7966613!10e5!16s%2Fg%2F11bzsczx5k!3m5!1s0x85f107abcde485c1:0x12b0bc7af1c81d22!8m2!3d18.6532917!4d-91.7966613!16s%2Fg%2F11bzsczx5k?entry=ttu"
+              ><button class="btn display-6 py-3 d-flex align-items-center">
+                <i class="bi bi-geo-alt"></i>
+                <span
+                  class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
+                >
+                  Ver mapa
+                </span>
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- <section class="pase">
+      </section> -->
+      <section class="window-back-2"></section>
+      <section class="familiares-information text-white">
+        <div
+          class="text-white text-shadow font-paris titles display-3 text-center"
+        >
+          <p class="w-100 text-center m-0 pt-4 display-2 text-white">Faltan</p>
+          <p id="demo" class="w-100 pl-4 pr-4 font-cormo cuenta-regresiva"></p>
+        </div>
+        <div class="d-flex justify-content-around align-items-center">
+          <img
+            loading="lazy"
+            class="decoration"
+            src="./assets/img-j-ignacio/line-silver.png"
+            alt="linea"
           />
         </div>
       </section>
-      <section class="home6 pl-4 pr-4 pb-4">
-        <div class="row animate__animated animate-right">
-          <div class="col-12 d-flex justify-content-center align-items-center">
-            <p class="display-1 txt-blue text-center">
-              Una princesita está por cumplir
-            </p>
-          </div>
-        </div>
+      <section class="pase">
+        <p class="m-0 display-6 font-kala">
+          ¡Mis papás están organizando esto con mucho cariño para mi y para
+          ustedes!
+        </p>
       </section>
-      <section class="window-back">
-        <div
-          class="animate-image info d-flex justify-content-center align-items-center"
-        >
-          <div class="d-flex justify-content-center">
-            <div class="">
-              <div>
-                <!-- <p class="display-1 text-center text-white pt-4">MIS</p> -->
 
-                <div class="d-flex justify-content-center align-items-center">
-                  <img
-                    class="img-cinco"
-                    src="./assets/img/cinco.png"
-                    alt="cinco"
-                  />
-                </div>
-                <p class="display-1 text-center txt-yellow pt-4">AÑOS</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-foto">
-        <div
-          class="animate-image info d-flex justify-content-center align-items-center"
-        >
-          <div class="d-flex justify-content-center">
-            <div class="">
-              <div>
-                <!-- <p class="display-1 text-center text-white pt-4">MIS</p> -->
-
-                <div class="d-flex justify-content-center align-items-start">
-                  <img
-                    class="foto"
-                    src="./assets/img/fotolauritabb.png"
-                    alt="cinco"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="home3 pl-4 pr-4 pb-4">
-        <div class="row animate__animated animate-right">
-          <div class="col-12 d-flex justify-content-center align-items-center">
-            <p class="display-1 txt-blue text-center">¡Vamos a celebrarlo!</p>
-          </div>
-        </div>
-      </section>
-      <section class="home4 pt-4">
-        <div class="w-100">
-          <p class="txt-blue text-center display-4">
-            Este sábado 10 de septiembre
-          </p>
-          <p class="text-center txt-orange display-3">2:00pm</p>
-          <div class="d-flex justify-content-center">
-            <img
-              class="home-isabela"
-              src="https://media.baamboozle.com/uploads/images/186881/1654869089_1892097_gif-url.gif"
-              alt="isabela"
-            />
-          </div>
-        </div>
-      </section>
-      <div class="space"></div>
-      <div class="space"></div>
-      <section class="w-100 color-green pt-4 animate__animated animate-left">
-        <div class="d-flex align-items-center">
-          <p class="text-center pt-2 display-4 w-100 txt-blue">
-            <i class="bi bi-geo-alt"></i>En mi casa
-          </p>
-        </div>
-      </section>
-      <div class="space"></div>
-      <div class="space"></div>
-      <section class="ubicacion w-100 pt-4">
-        <div class="d-flex justify-content-around align-items-center">
-          <div class="pt-4 pb-4 shadow">
-            <div class="d-flex justify-content-center">
-              <div class="w-50">
-                <img
-                  class="tira-flores pr-2"
-                  src="./assets/img/flor4 (1).png"
-                  alt=""
-                />
-                <p class="lead font-sawa text-white p-4 text-center">
-                  Por favor, confirma tu asistencia antes del 1 de septiembre
-                </p>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-              <a
-                target="_blank"
-                class="btn rounded text-center p-4 display-6 animate__animated animate__pulse animate__infinite"
-                href="https://wa.me/529331195156?text=Hola!%20quiero%20confirmar%20mi%20asistencia,%20soy%20(nombre)`"
-                ><i class="bi bi-check2-circle font-sawa"
-                  >Confirmar asistencia</i
-                ></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="d-flex justify-content-center align-items-center pt-4">
-            <img
-              class="casa pt-4"
-              src="https://imagenesparapeques.com/wp-content/uploads/2022/05/Encanto-Antonio-Madrigal-Persoanjes.png"
-              alt="leopardo"
-            />
-          </div>
-        </div>
-      </section>
-      <div class="space"></div>
-      <div class="space"></div>
-      <div class="space"></div>
-      <div class="space"></div>
       <section
-        class="end pt-4 bg-pink d-flex justify-content-center animate-right-content animate__animated align-items-center pr-4 pl-4"
+        class="window-regalos d-flex justify-content-center align-items-center"
       >
-        <div>
-          <div class="d-flex justify-content-center pb-4">
-            <img
-              class="tira-flores"
-              src="./assets/img/flor4 (1).png"
-              alt="flor"
-            />
-          </div>
-          <p
-            class="display-1 text-center txt-marine animate__animated animate-"
+        <div class="w-80 h-80 d-flex justify-content-center">
+          <div
+            class="card-regalos p-4"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="3000"
           >
-            ¡TE ESPERAMOS!
-          </p>
-          <div class="d-flex justify-content-center">
-            <img
-              class="gif"
-              src="https://www.icegif.com/wp-content/uploads/2022/03/icegif-402.gif"
-              alt="gif"
-            />
-          </div>
-          <p
-            class="display-1 pt-4 text-center txt-marine animate__animated animate-"
-          >
-            NO FALTES
-          </p>
-          <div class="d-flex justify-content-center">
-            <img
-              class="tira-flores"
-              src="./assets/img/flor4 (1).png"
-              alt="flires"
-            />
+            <img src="./assets/img/traje-de-baño.png" alt="" class="w-100" />
+            <!-- <p class="display-4 text-center pt-4">
+              No olvides traer tu traje de baño y sandalias
+
+            </p>
+            <div class="d-flex justify-content-center">
+              <hr class="text-center" />
+            </div> -->
+            <!-- <div class="row d-flex justify-content-around align-items-center">
+              <div class="col-12">
+                <div class="pt-4 d-flex justify-content-center">
+                  <i class="bi bi-envelope icon-sobre"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="w-80 font-cormo text-center display-6 text-shadow">
+                    Sobre con dinero en efectivo
+                  </p>
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </section>
-      <footer class="pt-2 pb-2 bg-white-almond">
-        <p class="text-center font-sawa">
-          Invitación hecha por
+      <section class="text-center p-4 bg-dark-blue">
+        <div
+          class="display-4 font-cormo"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          <img src="./assets/img/confirma.png" alt="" class="w-100" />
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <p
+            class="w-50 py-4 font-cormo"
+            data-aos="fade-in"
+            data-aos-duration="3000"
+          >
+            Por favor, danos la respuesta de tu asistencia al evento antes del 2
+            de Febrero
+          </p>
+        </div>
+        <div>
+          <a
+            class="animate__animated animate__slow animate__flash animate__infinite"
+            href="https://wa.me/529381598148?text=Hola!%20Gracias%20por%20la%20invitación.%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20fiesta!"
+            ><button class="btn p-3 display-6 font-kala">
+              <i class="bi bi-check"></i>Confirmar
+            </button></a
+          >
+        </div>
+        <div class="pt-2">
+          <a
+            href="https://wa.me/529381598148?text=Hola!%20Gracias%20por%20la%20invitacion%20pero%20no%20podré%20asistir%20a%20la%20fiesta."
+            ><button class="btn p-1 btn-dark font-kala">
+              <i class="bi bi-x"></i>No podré asistir
+            </button></a
+          >
+        </div>
+      </section>
+      <section class="gracias d-flex justify-content-center align-items-center">
+        <div class="font-paris text-shadow display-2 text-white p-4">
+          <img
+            src="./assets/img/no-faltes.png"
+            alt=""
+            class="w-100 mb-4 pb-4"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+          />
+        </div>
+      </section>
+      <section class="last-container">
+        <p class="text-center m-0 p-0">
+          Digital Invite by
           <a
             target="_blank"
             href="https://wa.me/524426147355?text=Hola%20Esmeralda!%20Me%20interesa%20contratar%20tu%20servicio"
             class="marca"
-            >Esmeralda <i class="bi bi-whatsapp"></i
+          >
+            Esmeralda <i class="bi bi-whatsapp"></i
           ></a>
         </p>
-      </footer>
-      <script src="./javascript.js"></script>
-      <!-- boostrap -->
-      <script
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"
-      ></script>
+      </section>
     </div>
+    <!-- Carousel 2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        nav: true,
+        slideBy: 1,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <!-- js -->
+    <script src="./javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- boostrp -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
